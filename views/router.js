@@ -11,6 +11,9 @@ import ShopcarContainer from "./components/tabar/ShopcarContainer.vue"
 import newsList from "./components/news/newsList.vue"
 import newsInfo from "./components/news/newsinfo.vue"
 import photoList from "./components/photos/photoList.vue"
+import photoInfo from "./components/photos/photoInfo.vue"
+import goodsList from "./components/goods/goodsList.vue"
+
 // 创建路由实例
 var router = new VueRouter({
     routes: [
@@ -21,7 +24,9 @@ var router = new VueRouter({
         {path: "/search", component: SearchContainer},
         {path: "/home/newsList", component: newsList},
         {path: "/home/newsInfo:id", component: newsInfo},
-        {path: "/home/photoList", component: photoList}
+        {path: "/home/photoList", component: photoList},
+        {path: "/home/photoInfo:id", component: photoInfo},
+        {path: "/home/goodsList", component: goodsList}
     ],
     linkActiveClass: "mui-active"
 })
